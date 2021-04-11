@@ -18,7 +18,6 @@ The website hosted at 000webhost 👍👍👍
     https://donation-bhavjot.000webhostapp.com/
 
 <!----------------------------------------------->
-
 <!----------------------------------------------->
 
 # Tech Stacks 👍 :- 
@@ -30,7 +29,14 @@ The website hosted at 000webhost 👍👍👍
         JS
 
 <!----------------------------------------------->
+<!----------------------------------------------->
 
+# Gateway Used 👍 :- 
+
+    RazorPay
+    PayU
+    
+<!----------------------------------------------->
 <!----------------------------------------------->
 
 This Project was given by THE SPARKS FOUNDATION 
@@ -41,6 +47,6 @@ Under the Graduate Rotational Internship Program (GRIP)
 
     https://www.thesparksfoundationsingapore.org/join-us/internship-positions/
 
-<!----------------------------------------------->
+
 
  
