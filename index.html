@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="the sparks foundation internship certificate, donation, the sparks foundation internship, grip at the sparks foundation, grip at the sparks foundation internship, the sparks foundation grip, the sparks foundation github, the sparks foundation internship web development, the sparks foundation internship, the sparks foundation linkedin, the sparks foundation network, the sparks foundation singapore, the sparks foundation tasks, the sparks foundation web development internship, tsf, tsf at grip, grip, tsf grip, Graduate Rotational Internship Program, Payment gateway integration, task Payment gateway integration">
+<meta name="author" content="Bhavjot Singh">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<title>Donation | TSF</title>
+<style>
+body {
+margin:0;
+padding:0;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color:white;
+background: url(images/Background.jpg) no-repeat;
+background-size: cover;
+}
+
+/*--Header Div--*/
+.header {
+margin:0;
+width:100%;
+height: 100px;
+position:relative;
+background-color: rgba(0,0,0, 0.4);
+}
+
+/*--Header Right Lists--*/
+.header-right { 
+margin: 35px 40px 0 0;
+font-size:20px;
+float:right;
+}
+
+.header-right .header-right-links{ 
+display:inline;
+padding: 0 30px;
+text-decoration:none;
+color: white;
+font-weight: bold;
+transition: 0.6s;
+}
+
+.header .header-right .header-right-links:hover { 
+text-decoration:underline;
+letter-spacing: 2.5px;
+}
+
+/*--Responsive Header Hamburger Icon--*/
+.header .header-right-icon {
+display: none;
+font-size: 35px;
+float: right;
+color: white;
+position: absolute;
+top: 30%;
+right: 5%;
+}
+
+/*--Responsive Header Close Icon--*/
+.header .header-right-close-icon {
+  display: none;
+  font-size: 35px;
+  float: right;
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  z-index: 999;
+}
+
+/*--Header Responsive Query--*/
+@media (max-width: 880px) {
+.header {
+	font: bold 14px sans-serif;
+	width: 100%;
+	}
+
+.header .header-right .header-right-links {
+	display: none;
+	}
+
+.header .header-right-icon {
+	display: block;
+  }
+
+  .header .header-right-close-icon {
+    display: block;
+    opacity: 0;
+  }
+
+.header .Responsive-SlideDown {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+	height: 100vh;
+	width: 100%;
+  position: fixed;
+  left: 0%;
+  top: -4.6%;
+  z-index: 1;
+  overflow-y: hidden;
+  transition: 0.5s ease-in-out;
+	}
+ 
+.header .Responsive-SlideDown .header-right-links {
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  padding: 40px;
+	transform: translate(0%, 125%);
+	color: white;
+  }
+}
+
+.page-content .heading .heading-top {
+font-weight: 600;
+text-align: right;
+font-size: 45px;
+margin: 3% 8.5% 0 0;
+}
+
+.page-content .heading .heading-top span {
+color: peachpuff;
+font-weight: bolder;
+}
+
+.page-content .heading .heading-quote {
+font-weight: 800;
+font-size: 20px;
+font-style: italic;
+color: #2e2e2e;
+float: right;
+text-align: justify;
+width: 35%;
+margin: 0% 10% 0 0;
+}
+
+.page-content .heading .heading-quote q:before {
+content: open-quote;
+font-size: 40px;
+color: black;
+}
+
+.page-content .heading .heading-quote q:after {
+content: close-quote;
+font-size: 40px;
+color: black;
+}
+
+.page-content .heading .heading-para {
+font-weight: 800;
+font-size: 30px;
+color: darkred;
+float: right;
+margin: 10% -25% 0 0;
+}
+
+.page-content .heading .blink-hand {
+font-size: 40px;
+color: darkred;
+float: right;
+opacity: 0;
+margin: 9.5% -29% 0 0;
+animation: blink 3.5s infinite linear;
+}
+
+@keyframes blink {
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+    120%{opacity: 0;}
+}
+
+.page-content .donateBtn {
+display: block;
+border-radius: 10%;
+background-color: darkred;
+border: none;
+color: white;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.4s;
+cursor: pointer;
+float: right;
+margin: 15% -25% 0 0;
+}
+
+.page-content .donateBtnSpan {
+cursor: pointer;
+display: block;
+position: relative;
+transition: 0.5s;
+}
+
+.page-content .donateBtnSpan:after {
+content: "Now";
+position: absolute;
+color: white;
+opacity: 0;
+top: 0;
+right: -60px;
+transition: 0.6s;
+}
+
+.page-content .donateBtn:hover {
+transform: scale(1.1);
+}
+
+.page-content .donateBtn:hover .donateBtnSpan {
+padding-right: 50px;
+}
+
+.page-content .donateBtn:hover .donateBtnSpan:after {
+opacity: 1;
+right: 0;
+}
+
+.page-footer .footer-content {
+font-weight: bold;
+font-size: 20px;
+position: absolute;
+bottom: 0%;
+margin: auto;
+padding: 5px 0 5px 0;
+text-align: center;
+background-color: black;
+color: white;
+width: 100%;
+}
+
+@media (max-width: 880px) {
+  body {
+    background-image: none;
+    background-color: peachpuff;
+  }
+
+  .page-content .heading .heading-top {
+    text-align: center;
+    margin: 10% 0 0 0;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .page-content .heading .heading-top span {
+    color: maroon;
+  }
+
+  .page-content .heading .heading-quote {
+    float: none;
+    text-align: center;
+    width: 80%;
+    margin: 3% 0 0 11%;
+  }
+
+  .page-content .heading .heading-para {
+    float: none;
+    margin: 5% 0 0 35%;
+  }
+
+  .page-content .heading .blink-hand {
+    float: none;
+    margin: 0 0 0 46%;
+  }
+
+  .page-content .donateBtn {
+    margin: 2.5% 0 0 40%;
+    float: none;
+    padding: 15px;
+    font-size: 22px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 580px) {
+ 
+  .page-content .heading .heading-para {
+    margin: 4% 0 0 5%;
+  }
+
+  .page-content .donateBtn {
+    margin: 5% 0 0 25%;
+  }
+}
+/*----------------------------------------------------*/
+/*--Section Onload--*/
+.Onload {
+background-color:rgb(0, 0, 0);
+background-color:rgba(0, 0, 0, 0.9);
+width: 100%;
+height: 120vh;
+display: block;
+position: fixed;
+z-index: 9999;
+}
+
+/*--Banner--*/
+.banner-Onload {
+position: absolute;
+top: 0%;
+transform: translate(50%, 20%);
+border: 2px solid black;
+height: 60%;
+width: 50%;
+background-color: white;
+}
+
+/*--Banner Heading Logo--*/
+.banner-Onload .banner-heading-left-logo {
+width: 20%;
+height: 35%;
+position: absolute;
+left: 2.5%;
+}
+
+/*--Banner Heading--*/
+.banner-Onload .banner-heading {
+text-align: center;
+font-size: 2.5em;
+position: absolute;
+left: 28%;
+top: 6%;
+}
+
+/*--Banner Heading close button--*/
+.banner-Onload .banner-heading-right-close, .banner-Onload .banner-heading-right-close .fa-fa-close {
+float: right;
+position: absolute;
+right: 2%;
+top: 2%;
+color: black;
+font-size: 30px;
+width: 5%;
+text-align: center;
+border: 1.5px solid black;
+}
+
+/*--Banner Heading close button hover--*/
+.banner-Onload .banner-heading-right-close:hover, .banner-Onload .banner-heading-right-close .fa-fa-close:hover {
+transform: scale(1.1);
+cursor: pointer;
+}
+
+/*--Banner Sub Heading--*/
+.banner-Onload .sub-banner-heading {
+text-align: center;
+font-size: 32px;
+text-decoration: underline;
+position: absolute;
+top: 30%;
+left: 2.5%;
+}
+
+/*--Banner Topic Heading--*/
+.banner-Onload .topic-banner-heading {
+text-align: center;
+font-size: 40px;
+position: absolute;
+top: 55%;
+left: 2.5%;
+font-weight: 600;
+}
+
+/*--Banner Footer--*/
+.banner-Onload .banner-footer {
+font-weight: bold;
+font-size: 20px;
+position: absolute;
+bottom: 0%;
+margin: auto;
+padding: 5px 0 5px 0;
+text-align: center;
+background-color: black;
+color: white;
+width: 100%;
+}
+
+@media (max-width: 880px) {
+    .Onload {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-Onload {
+        width: 70%;
+        height: 80%;
+        top: 10%;
+        left: 15%;
+        transform: translate(0, 0);
+    }
+}
+
+@media (max-width: 480px) {
+    .Onload {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-Onload {
+        width: 90%;
+        min-height: 50%;
+        top: 10%;
+        left: 5%;
+        transform: translate(0, 0);
+    }
+
+
+}
+
+@media (max-width: 425px) {
+    .Onload {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-Onload {
+        width: 90%;
+        min-height: 70%;
+        top: 15%;
+        left: 5%;
+        transform: translate(0, 0);
+        font-size: 11px;
+    }
+
+    .banner-Onload .banner-heading-right-close, .banner-Onload .banner-heading-right-close .fa-fa-close {
+        width: 12%;
+        font-size: 25px;
+    }
+
+    .banner-Onload .sub-banner-heading {
+        font-size: 20px;
+    }
+
+    .banner-Onload .topic-banner-heading {
+        font-size: 25px;
+    }
+}
+/*----------------------------------------------------*/
+</style>
+</head>
+<body>
+    <section class="Onload" id="Onload">
+        <div class="banner-Onload" id="banner-Onload">
+            <img src="images/logo.png" class="banner-heading-left-logo">
+            <p class="banner-heading">The Sparks Foundation</p>
+            <span class="banner-heading-right-close" id="banner-heading-right-close" onclick="closeBanner()"><i class="fa fa-close"></i></span>
+            <p class="sub-banner-heading">Graduate Rotational Internship Program (GRIP)<br><span style="color: blue; font-weight: bolder; text-decoration: underline;">Apr 2021</span></p>
+            <p class="topic-banner-heading"><span style="color: blue; font-weight: bolder;">Task #3</span> Payment Gateway Integration</p>
+            <p class="banner-footer">Designed & Developed with <i class="fa fa-clock-o" style="color: red;"></i> by <a href="devloper.html" style="color: white;">Bhavjot Singh</a></p>
+        </div>
+    </section>
+    
+    <script>
+    
+    function closeBanner()
+    {
+        document.getElementById("Onload").style.display= "none";
+    }
+    </script>
+
+    <!----------------------------------------------------------------------------->
+    <section class="page-header">
+    <div class="header">      
+        <div id="header-right" class="header-right">
+          <a href="index.html" class="header-right-links">Home</a>
+          <a href="about.html" class="header-right-links">About</a>
+          <a href="contact.html" class="header-right-links">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="header-right-icon" onclick="ResponsiveFunction()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="header-right-close-icon" id="closeIcon" onclick="ResponsiveFunction()"><i class="fa fa-close"></i></a>
+    </div>
+</section>
+
+<!--Script for header-->
+<script>
+    function ResponsiveFunction()
+    {  
+      var nav = document.getElementById("header-right");
+      var closeIcon = document.getElementById("closeIcon");
+  
+        if (nav.className === "header-right")
+      {
+            nav.className += " Responsive-SlideDown";
+            closeIcon.style.opacity = "1";
+        }
+      
+      else
+      {
+            nav.className = "header-right";
+            closeIcon.style.opacity = "0";
+        }
+    }
+  </script>  
+<!--End of Script for header-->
+
+<section class="page-content">
+    <div class="heading">
+        <p class="heading-top">Support for a <span>C.A.U.S.E</span></p>
+        <p class="heading-quote"><q>Remember that the happiest people are not those getting more, but those giving more.</q></p>
+        <p class="heading-para">Be a Fund-Raiser</p><span class="blink-hand"><i class="fa fa-hand-o-down"></i></span>
+    </div>
+
+    <button class="donateBtn" onclick="document.location='donatePage.html'"><span class="donateBtnSpan">Donate </span></button>
+</section>
+
+<section class="page-footer">
+    <p class="footer-content">Designed & Developed with <i class="fa fa-clock-o" style="color: red;"></i> by <a href="devloper.html" style="color: white;">Bhavjot Singh</a></p>
+</section>
+
+</body>
+</html>     

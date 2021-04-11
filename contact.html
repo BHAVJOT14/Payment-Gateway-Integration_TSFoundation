@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="the sparks foundation internship certificate, donation, the sparks foundation internship, grip at the sparks foundation, grip at the sparks foundation internship, the sparks foundation grip, the sparks foundation github, the sparks foundation internship web development, the sparks foundation internship, the sparks foundation linkedin, the sparks foundation network, the sparks foundation singapore, the sparks foundation tasks, the sparks foundation web development internship, tsf, tsf at grip, grip, tsf grip, Graduate Rotational Internship Program, Payment gateway integration, task Payment gateway integration">
+<meta name="author" content="Bhavjot Singh">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<title>Donation | Contact</title>
+<style>
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin:0;
+padding:0;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: rgb(255, 126, 103);
+}
+
+.background {
+height: 100vh;
+width: 110%;
+position: fixed;
+top: 0;
+bottom: 0;
+z-index: 0;
+background: peachpuff;
+clip-path: circle(60% at 100%);
+z-index: -9999;
+}
+
+/*--Header Div--*/
+.header {
+margin:0;
+width:100%;
+height: 100px;
+position:relative;
+background-color: white;
+}
+
+.header .header-left {
+display: inline-block;
+width: 40%;
+}
+
+.header .header-left .heading-donate {
+font-size: 20px;
+font-weight: 700;
+margin: 6% 0 0 12%;
+}
+
+.header .header-left .heading-donate .blink-hand {
+font-size: 25px;
+animation: blink 3.5s infinite linear;    
+}
+
+@keyframes blink {
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+    120%{opacity: 0;}
+}
+
+.header .header-left .donateBtn {
+display: block;
+border-radius: 20px;
+background-color: darkred;
+border: none;
+color: white;
+text-align: center;
+font-size: 20px;
+padding: 15px;
+width: 150px;
+cursor: pointer;
+margin: -8% 0 0 60%;
+}
+
+.header .header-left .donateBtn:hover {
+transform: scale(1.1);
+}   
+
+.header .header-left .donateBtnSpan {
+cursor: pointer;
+display: block;
+position: relative;
+transition: 0.5s;
+}
+
+.header .header-left .donateBtnSpan:after {
+content: "Now";
+position: absolute;
+color: white;
+opacity: 0;
+top: 0;
+right: -40px;
+transition: 0.6s;
+}
+
+.header .header-left .donateBtn:hover .donateBtnSpan {
+padding-right: 30px;
+}
+
+.header .header-left .donateBtn:hover .donateBtnSpan:after {
+opacity: 1;
+right: 0;
+}
+
+/*--Header Right Lists--*/
+.header-right { 
+margin: 35px 40px 0 0;
+font-size:20px;
+float:right;
+}
+
+.header-right .header-right-links{ 
+display:inline;
+padding: 0 30px;
+text-decoration:none;
+color: black;
+font-weight: bold;
+transition: 0.6s;
+}
+
+.header .header-right .header-right-links:hover { 
+text-decoration:underline;
+letter-spacing: 2.5px;
+}
+
+/*--Responsive Header Hamburger Icon--*/
+.header .header-right-icon {
+display: none;
+font-size: 35px;
+float: right;
+color: black;
+position: absolute;
+top: 30%;
+right: 5%;
+}
+
+/*--Responsive Header Close Icon--*/
+.header .header-right-close-icon {
+  display: none;
+  font-size: 35px;
+  float: right;
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  z-index: 999;
+}
+
+/*--Header Responsive Query--*/
+@media (max-width: 880px) {
+.header {
+	font: bold 14px sans-serif;
+	width: 100%;
+	}
+
+.header .header-right .header-right-links {
+	display: none;
+	}
+
+.header .header-right-icon {
+	display: block;
+  }
+
+  .header .header-right-close-icon {
+    display: block;
+    opacity: 0;
+  }
+
+.header .Responsive-SlideDown {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+	height: 100vh;
+	width: 100%;
+  position: fixed;
+  left: 0%;
+  top: -4.6%;
+  z-index: 1;
+  overflow-y: hidden;
+  transition: 0.5s ease-in-out;
+	}
+ 
+.header .Responsive-SlideDown .header-right-links {
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  padding: 40px;
+	transform: translate(0%, 125%);
+	color: white;
+  }
+
+.header .header-left {
+  display: none;
+  }
+
+.background {
+  display: none;
+}
+}
+
+@media (max-width: 680px) {
+.header {
+	width: 100%;
+	}
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form h1 {
+  margin-bottom: 1.5rem;
+}
+
+.my-form li,
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid black;
+  color: white;
+  background: #333;
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+  transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form textarea {
+  height: 170px;
+}
+
+.my-form ::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus,
+.my-form input[type="checkbox"]:focus + label {
+  background: #333;
+  transform: scale(1.1);
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+  transform: scale(1.02);
+}
+
+.my-form *:required {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+}
+
+.my-form *:required {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
+}
+
+/* FORM BTNS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.my-form .required-msg {
+  display: none;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
+    no-repeat center left / 15px 15px;
+  padding-left: 20px;
+}
+
+.my-form .btn-grid {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s;
+}
+
+.my-form button {
+  font-weight: bold;
+}
+
+.my-form button > * {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.my-form button .back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+
+.my-form button:enabled:hover .back,
+.my-form button:focus .back {
+  transform: translate(-50%, -50%);
+}
+
+.my-form button:enabled:hover .front,
+.my-form button:focus .front {
+  transform: translateX(110%);
+}
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 600px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .my-form .required-msg {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  .my-form input[type="checkbox"] + label::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .my-form input[type="checkbox"]:checked + label::after {
+    top: 3px;
+  }
+}
+
+</style>
+</head>    
+<body>
+<div class="background"></div>
+
+  <section class="page-header">
+    <div class="header">      
+        <div class="header-left">
+            <p class="heading-donate">Support for a Cause <span class="blink-hand"><i class="fa fa-hand-o-right"></i></span></p>
+            <button class="donateBtn" onclick="document.location='donatePage.html'"><span class="donateBtnSpan">Donate </span></button>
+        </div>
+        <div id="header-right" class="header-right">
+            <a href="index.html" class="header-right-links">Home</a>
+            <a href="about.html" class="header-right-links">About</a>
+            <a href="contact.html" class="header-right-links">Contact</a>
+        </div>
+    
+        <a href="javascript:void(0);" class="header-right-icon" onclick="ResponsiveFunction()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="header-right-close-icon" id="closeIcon" onclick="ResponsiveFunction()"><i class="fa fa-close"></i></a>
+    </div>
+</section>
+    
+<!--Script for header-->
+<script>
+function ResponsiveFunction()
+{  
+    var nav = document.getElementById("header-right");
+    var closeIcon = document.getElementById("closeIcon");
+      
+    if (nav.className === "header-right")
+    {
+        nav.className += " Responsive-SlideDown";
+        closeIcon.style.opacity = "1";
+    }    
+    else
+    {
+        nav.className = "header-right";
+        closeIcon.style.opacity = "0";
+    }  
+}
+</script>  
+<!--End of Script for header-->
+
+<form class="my-form">
+  <div class="container">
+    <h1>Get in touch!</h1>
+      <ul>
+        <li>
+          <div class="grid grid-2">
+            <input type="text" placeholder="Name" required>  
+            <input type="text" placeholder="Surname" required>
+          </div>
+        </li>
+        <li>
+          <div class="grid grid-2">
+            <input type="email" placeholder="Email" required>  
+            <input type="tel" placeholder="Phone">
+          </div>
+        </li>    
+        <li>
+          <textarea placeholder="Message"></textarea>
+        </li>   
+        <li>
+          <div class="grid grid-3">
+            <div class="required-msg">REQUIRED FIELDS</div>
+            <button class="btn-grid" type="submit">
+              <span class="back">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+              </span>
+              <span class="front">SUBMIT</span>
+            </button>
+            <button class="btn-grid" type="reset">
+              <span class="back">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+              </span>
+              <span class="front">RESET</span>
+            </button> 
+          </div>
+        </li>    
+      </ul>
+    </div>
+  </form>
+  
+</body>
+</html>

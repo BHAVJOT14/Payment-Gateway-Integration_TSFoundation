@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="the sparks foundation internship certificate, donation, the sparks foundation internship, grip at the sparks foundation, grip at the sparks foundation internship, the sparks foundation grip, the sparks foundation github, the sparks foundation internship web development, the sparks foundation internship, the sparks foundation linkedin, the sparks foundation network, the sparks foundation singapore, the sparks foundation tasks, the sparks foundation web development internship, tsf, tsf at grip, grip, tsf grip, Graduate Rotational Internship Program, Payment gateway integration, task Payment gateway integration">
+<meta name="author" content="Bhavjot Singh">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<title>Donation | About</title>
+<style>
+body {
+margin:0;
+padding:0;
+height: auto;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*--Header Div--*/
+.header {
+margin:0;
+width:100%;
+height: 100px;
+position:relative;
+background-color: white;
+}
+
+.header .header-left {
+display: inline-block;
+width: 40%;
+}
+
+.header .header-left .heading-donate {
+font-size: 20px;
+font-weight: 700;
+margin: 6% 0 0 12%;
+}
+
+.header .header-left .heading-donate .blink-hand {
+font-size: 25px;
+animation: blink 3.5s infinite linear;    
+}
+
+@keyframes blink {
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+    120%{opacity: 0;}
+}
+
+.header .header-left .donateBtn {
+display: block;
+border-radius: 20px;
+background-color: darkred;
+border: none;
+color: white;
+text-align: center;
+font-size: 20px;
+padding: 15px;
+width: 150px;
+cursor: pointer;
+margin: -8% 0 0 60%;
+}
+
+.header .header-left .donateBtn:hover {
+transform: scale(1.1);
+}   
+
+.header .header-left .donateBtnSpan {
+cursor: pointer;
+display: block;
+position: relative;
+transition: 0.5s;
+}
+
+.header .header-left .donateBtnSpan:after {
+content: "Now";
+position: absolute;
+color: white;
+opacity: 0;
+top: 0;
+right: -40px;
+transition: 0.6s;
+}
+
+.header .header-left .donateBtn:hover .donateBtnSpan {
+padding-right: 30px;
+}
+
+.header .header-left .donateBtn:hover .donateBtnSpan:after {
+opacity: 1;
+right: 0;
+}
+
+/*--Header Right Lists--*/
+.header-right { 
+margin: 35px 40px 0 0;
+font-size:20px;
+float:right;
+}
+
+.header-right .header-right-links{ 
+display:inline;
+padding: 0 30px;
+text-decoration:none;
+color: black;
+font-weight: bold;
+transition: 0.6s;
+}
+
+.header .header-right .header-right-links:hover { 
+text-decoration:underline;
+letter-spacing: 2.5px;
+}
+
+/*--Responsive Header Hamburger Icon--*/
+.header .header-right-icon {
+display: none;
+font-size: 35px;
+float: right;
+color: black;
+position: absolute;
+top: 30%;
+right: 5%;
+}
+
+/*--Responsive Header Close Icon--*/
+.header .header-right-close-icon {
+  display: none;
+  font-size: 35px;
+  float: right;
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  z-index: 999;
+}
+
+/*--Header Responsive Query--*/
+@media (max-width: 880px) {
+.header {
+	font: bold 14px sans-serif;
+	width: 100%;
+	}
+
+.header .header-right .header-right-links {
+	display: none;
+	}
+
+.header .header-right-icon {
+	display: block;
+  }
+
+  .header .header-right-close-icon {
+    display: block;
+    opacity: 0;
+  }
+
+.header .Responsive-SlideDown {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+	height: 100vh;
+	width: 100%;
+  position: fixed;
+  left: 0%;
+  top: -4.6%;
+  z-index: 1;
+  overflow-y: hidden;
+  transition: 0.5s ease-in-out;
+	}
+ 
+.header .Responsive-SlideDown .header-right-links {
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  padding: 40px;
+	transform: translate(0%, 125%);
+	color: white;
+  }
+.header .header-left {
+  display: none;
+  }
+}
+
+.slideshowContainer {
+position: relative;
+overflow: hidden;
+margin: 0 0 0 0;
+width: 100%;
+height: 500px;
+}
+
+.imageSlides {
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+min-width: 100%;
+min-height: 100%;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+z-index: -1;
+}
+
+/* add 'visible' class via Javascript */
+.visible {
+opacity: 1;
+}
+
+.slideshowArrow {
+font-size: 8em;
+color: white;
+cursor: pointer;
+opacity: 0.6;
+width: 8%;
+transition: opacity 0.5s ease-in-out;
+}
+
+.slideshowArrow:hover {
+opacity: 1;
+color: black;
+font-size: 10em;
+}
+
+#leftArrow {
+position: absolute;
+left: 4%;
+top: 50%;
+transform: translate(-50%, -50%);
+text-align: right;
+}
+
+#rightArrow {
+position: absolute;
+right: 4%;
+top: 50%;
+transform: translate(50%, -50%);
+}
+
+.slideshowCircles {
+position: absolute;
+bottom: 2%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.circle {
+display: inline-block;
+margin-left: 3px;
+margin-right: 3px;
+width: 15px;
+height: 15px;
+border-radius: 25%;
+border: solid 2px rgba(0, 0, 0, 0.8);
+transition: 1s ease-in-out;
+}
+
+.dot {
+background-color: #333;
+border: solid 2px rgba(0, 0, 0, 0.8);
+}
+
+.page-content .heading .heading-para {
+font-size: 30px;
+font-weight: 800;
+text-align: center;
+}
+
+.page-content .body-content {
+background-color: #e2e2e2;
+padding: 20px;
+width: 50%;
+border-radius: 30px;
+margin: 2% 0 2% 2%;
+}
+
+.page-content .body-content .body-content-para {
+font-weight: 500;
+margin: 10% 40% 0 0;
+width: 40%;
+text-align: justify;
+}
+
+.page-content .body-content .body-content-para-image {
+width: 50%;
+height: auto;
+padding: 20px;
+margin: -32% 0 0 45%;
+}
+
+.page-content .body-content-right {
+background-color: #e2e2e2;
+padding: 20px;
+width: 35%;
+border-radius: 30px;
+float: right;
+margin: -27% 2% 0% 0%;
+}
+
+.page-content .body-content-right .body-content-right-para {
+font-weight: 500;
+margin: 5% 40% 0 0;
+width: 90%;
+text-align: justify;
+}
+
+.page-content .body-content-right .body-content-right-para-image {
+width: 80%;
+height: auto;
+padding: 20px;
+margin: 8% 0 0 5%;
+}
+
+.page-content .body-content-left-center {
+background-color: #e2e2e2;
+padding: 20px;
+width: 50%;
+border-radius: 30px;
+float: left;
+margin: 2% 0% 0% 2%;
+}
+
+.page-content .body-content-left-center .body-content-left-center-heading {
+text-align: center;
+font-weight: 700;
+font-size: 30px;
+margin: -1% 0 0 0;
+}
+
+.page-content .body-content-left-center .body-content-left-center-para {
+font-weight: 500;
+margin: 0% 40% 0 0;
+width: 90%;
+text-align: justify;
+font-size: 22px;
+}
+
+.page-content .body-content-left-center .body-content-left-center-para q:after {
+content: close-quote;
+font-size: 45px; 
+color: black; 
+}
+
+.page-content .body-content-left-center .body-content-left-center-para q:before {
+content: open-quote;
+font-size: 45px;
+color: black;  
+}
+
+.page-footer {
+margin: 23% 0 0% 0;
+}
+
+.page-footer .footer-content {
+font-weight: bold;
+font-size: 20px;
+position: absolute;
+margin-top: 0;
+padding: 5px 0 5px 0;
+text-align: center;
+background-color: black;
+color: white;
+width: 100%;
+}
+
+@media (max-width: 880px){
+  .page-content .body-content {
+    width: auto;
+  } 
+
+  .page-content .body-content .body-content-para {
+    width: auto;
+    text-align: justify;
+    margin: 0 0 0 0;
+  }
+
+  .page-content .body-content .body-content-para-image {
+    margin: 0 0 0 0;
+    width: 80%;
+    height: auto;
+  }
+
+  .page-content .body-content-right {
+    width: auto;
+    margin: 7% 0 0 0;
+  }
+
+  .page-content .body-content-right .body-content-right-para {
+    width: auto;
+    text-align: justify;
+    margin: 0 0 0 0;
+  }
+
+  .page-content .body-content-right .body-content-right-para-image {
+    margin: 0 0 0 0;
+    width: 85%;
+    height: auto;
+  }
+
+  .page-content .body-content-left-center {
+    width: auto;
+    margin: 7% 0 0 0;
+  }
+
+  .page-content .body-content-left-center .body-content-left-center-heading {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .page-content .body-content-left-center .body-content-left-center-para {
+    width: auto;
+    text-align: justify;
+    margin: 0 0 0 0;
+  }
+
+  .page-footer  {
+    margin: 140% 0 0 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .page-footer {
+    margin: 400% 0 0 0;
+  }
+}
+</style>
+</head>    
+<body>
+<section class="page-header">
+    <div class="header">      
+        <div class="header-left">
+            <p class="heading-donate">Support for a Cause <span class="blink-hand"><i class="fa fa-hand-o-right"></i></span></p>
+            <button class="donateBtn" onclick="document.location='donatePage.html'"><span class="donateBtnSpan">Donate </span></button>
+        </div>
+        <div id="header-right" class="header-right">
+            <a href="index.html" class="header-right-links">Home</a>
+            <a href="about.html" class="header-right-links">About</a>
+            <a href="contact.html" class="header-right-links">Contact</a>
+        </div>
+    
+        <a href="javascript:void(0);" class="header-right-icon" onclick="ResponsiveFunction()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="header-right-close-icon" id="closeIcon" onclick="ResponsiveFunction()"><i class="fa fa-close"></i></a>
+    
+    </div>
+</section>
+    
+<!--Script for header-->
+<script>
+function ResponsiveFunction()
+{  
+    var nav = document.getElementById("header-right");
+    var closeIcon = document.getElementById("closeIcon");
+      
+    if (nav.className === "header-right")
+    {
+        nav.className += " Responsive-SlideDown";
+        closeIcon.style.opacity = "1";
+    }    
+    else
+    {
+        nav.className = "header-right";
+        closeIcon.style.opacity = "0";
+    }  
+}
+</script>  
+<!--End of Script for header-->
+        
+<div class="slideshowContainer">
+	<img class="imageSlides" src="images/1.jpg" alt="img">
+  	<img class="imageSlides" src="images/2.jpg" alt="img">
+  	<img class="imageSlides" src="images/3.jpg" alt="img">  
+  	<img class="imageSlides" src="images/4.jpg" alt="img">
+  
+  	<span id ="leftArrow" class="slideshowArrow">&#8249;</span>
+  	<span id ="rightArrow" class="slideshowArrow">&#8250;</span>
+  
+  	<div class="slideshowCircles">
+    		<span class="circle dot"></span>
+    		<span class="circle"></span>
+    		<span class="circle"></span>
+    		<span class="circle"></span>
+  	</div>
+</div>
+
+<script>
+
+var imageSlides = document.getElementsByClassName('imageSlides');
+var circles = document.getElementsByClassName('circle');
+var leftArrow = document.getElementById('leftArrow');
+var rightArrow = document.getElementById('rightArrow');
+var counter = 0;
+
+function hideImages() {
+  for (var i = 0; i < imageSlides.length; i++) {
+    imageSlides[i].classList.remove('visible');
+  }
+}
+
+function removeDots() {
+  for (var i = 0; i < imageSlides.length; i++) {
+    circles[i].classList.remove('dot');
+  }
+}
+
+function imageLoop() {
+  var currentImage = imageSlides[counter];
+  var currentDot = circles[counter];
+  currentImage.classList.add('visible');
+  removeDots();
+  currentDot.classList.add('dot');
+  counter++;
+}
+
+function arrowClick(e) {
+  var target = e.target;
+  if (target == leftArrow) {
+    clearInterval(imageSlideshowInterval);
+    hideImages();
+    removeDots();
+    if (counter == 1) {
+      counter = (imageSlides.length - 1);
+      imageLoop();
+      imageSlideshowInterval = setInterval(slideshow, 3500);
+    } else {
+      counter--;
+      counter--;
+      imageLoop();
+      imageSlideshowInterval = setInterval(slideshow, 3500);
+    }
+  } 
+  else if (target == rightArrow) {
+    clearInterval(imageSlideshowInterval);
+    hideImages();
+    removeDots();
+    if (counter == imageSlides.length) {
+      counter = 0;
+      imageLoop();
+      imageSlideshowInterval = setInterval(slideshow, 3500);
+    } else {
+      imageLoop();
+      imageSlideshowInterval = setInterval(slideshow, 3500);
+    }
+  }
+}
+
+leftArrow.addEventListener('click', arrowClick);
+rightArrow.addEventListener('click', arrowClick);
+
+function slideshow() {
+  if (counter < imageSlides.length) {
+    imageLoop();
+  } else {
+    counter = 0;
+    hideImages();
+    imageLoop();
+  }
+}
+
+setTimeout(slideshow, 1000);
+var imageSlideshowInterval = setInterval(slideshow, 3500);
+
+</script>
+
+<section class="page-content">
+    <div class="heading">
+        <p class="heading-para">About Us</p>
+    </div>
+
+    <div class="body-content">
+        <p class="body-content-para">Donation is a non-political, non-profit organisation committed to the development of rural India. Donation began in a remote village in the Chhattisgarh District.
+          It was registered under The Societies Registration Act of 1860. Donation is now working in over 100 villages.</p>
+        <img class="body-content-para-image" src="images/5.jpg" alt="images">
+    </div>
+
+    <div class="body-content-right">
+      <p class="body-content-right-para">Our approach is to ‘help people help themselves’ by making the disadvantaged self-reliant and enabling them to lead a life of dignity.
+        This philosophy lays the foundation for our programmes so that they have the buy-in of the entire community and are hence sustainable and effective.<br><br>We work with and through grassroot organisations that have passion and purpose, but are strapped for funds.
+        We will help such organisations with not just funding but also capacity building.</p>
+      <img class="body-content-right-para-image" src="images/6.jpg" alt="images">
+  </div>
+
+  <div class="body-content-left-center">
+    <p class="body-content-left-center-heading">Mission</p>
+    <p class="body-content-left-center-para"><q>To work for the cause and care of disadvantaged humans and to improve their quality of life.</q></p>
+</div>
+</section>
+
+<section class="page-footer">
+  <p class="footer-content">Designed & Developed with <i class="fa fa-clock-o" style="color: red;"></i> by <a href="devloper.html" style="color: white;">Bhavjot Singh</a></p>
+</section>
+</body>
+</html>

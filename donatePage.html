@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="the sparks foundation internship certificate, donation, the sparks foundation internship, grip at the sparks foundation, grip at the sparks foundation internship, the sparks foundation grip, the sparks foundation github, the sparks foundation internship web development, the sparks foundation internship, the sparks foundation linkedin, the sparks foundation network, the sparks foundation singapore, the sparks foundation tasks, the sparks foundation web development internship, tsf, tsf at grip, grip, tsf grip, Graduate Rotational Internship Program, Payment gateway integration, task Payment gateway integration">
+<meta name="author" content="Bhavjot Singh">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<title>Donation | TSF</title>
+<style>
+body {
+margin:0;
+padding:0;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}    
+
+.backBtn {
+z-index: 999;
+display: inline-block;
+border-radius: 20px;
+background-color: darkred;
+border: none;
+color: white;
+text-align: center;
+font-size: 20px;
+padding: 15px;
+width: 150px;
+cursor: pointer;
+margin: 5px;
+}
+
+.backBtn:hover {
+transform: scale(1.1);
+}
+
+.backBtn .backBtnSpan {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.backBtn .backBtnSpan:after {
+content: '\21E0';
+position: absolute;
+font-size: 30px;
+opacity: 0;
+top: -5px;
+left: -70px;
+transition: 0.5s;
+}
+
+.backBtn:hover .backBtnSpan {
+padding-left: 30px;
+}
+
+.backBtn:hover .backBtnSpan:after {
+opacity: 1;
+left: 0;
+}
+
+.left-rect-box {
+display: block;
+width: 50%;
+height: 100vh;
+background-color: rgb(255, 126, 103);
+position: absolute;
+top: 0%;
+color: white;
+}
+
+.left-rect-box .quote-1-div {
+width: 90%;
+text-align: center;
+font-size: 28px;
+margin: -8% 0 0 4%;
+}
+
+.left-rect-box .quote-1-div q::before {
+content: open-quote;
+font-size: 70px;
+}
+
+.left-rect-box .quote-1-div q::after {
+content: close-quote;
+font-size: 70px;
+}
+
+.left-rect-box .image {
+width: 30%;
+height: auto;
+margin: 0 0 0 32%;
+}
+
+.left-rect-box .quote-2-div {
+width: 90%;
+text-align: center;
+font-size: 28px;
+margin: -5% 0 0 4%;
+}
+
+.left-rect-box .quote-2-div q::before {
+content: open-quote;
+font-size: 70px;
+}
+
+.left-rect-box .quote-2-div q::after {
+content: close-quote;
+font-size: 70px;
+}
+
+.right-rect-box {
+display: block;
+width: 50%;
+height: 100vh;
+background-color: peachpuff;
+position: absolute;
+top: 0%;
+right: 0%;
+color:black;
+}
+
+.right-rect-box .backBtn-div-right{
+display: none;
+}
+
+.right-rect-box .rect-box {
+width: 60%;
+height: auto;
+background-color: cornsilk;
+margin: 22% 0 0 20%;
+padding: 10px;
+border-radius: 20px;
+text-align: center;
+box-shadow: 10px 10px 5px grey;
+}
+
+.right-rect-box .rect-box .heading-topic {
+font-size: 25px;
+font-weight: 800;
+}
+
+.right-rect-box .rect-box .heading-topic .blink-hand {
+font-size: 40px;
+animation: blink 5s infinite linear;
+}
+
+@keyframes blink {
+    0%{opacity: 0;}
+    20%{opacity: 1;}
+    40%{opacity: 0;}
+    60%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+    120%{opacity: 0;}
+}
+
+.page-footer .footer-content {
+font-weight: bold;
+font-size: 20px;
+position: absolute;
+bottom: 0%;
+margin: auto;
+padding: 5px 0 5px 0;
+text-align: center;
+background-color: black;
+color: white;
+width: 100%;
+}
+
+@media (max-width: 880px) {
+    .left-rect-box {
+        display: none;
+    }
+
+    .right-rect-box {
+        width: 100%;
+    }
+
+    .right-rect-box .rect-box {
+        margin: 11% 0 0 20%;
+    }
+
+    .right-rect-box .rect-box .heading-topic {
+        font-size: 20px;
+    }
+
+    .right-rect-box .rect-box .heading-topic .blink-hand {
+        font-size: 30px;
+    }
+
+    .right-rect-box .backBtn-div-right {
+        display: block;
+    }
+
+    .page-footer .footer-content {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+</style>
+</head>
+<body>
+<section class="left-rect-box">
+    
+    <div class="backBtn-div">
+        <button class="backBtn" onclick="window.history.back()"><span class="backBtnSpan"> Back</span></button>
+    </div>
+    
+    <div class="quote-1-div">
+        <p class="quote"><q>we make a <b>LIVING</b> by what we <b>GET</b>,<br>but we make a <b>LIFE</b> by what we <b>GIVE</b>.</q></p>
+    </div>
+
+    <img class="image" src="images/Donate.png" alt="Donate">
+
+    <div class="quote-2-div">
+        <p class="quote"><q>The best way to find yourself, is to lose yourself in the service of others.</q></p>
+    </div>
+</section>
+
+<section class="right-rect-box">
+
+    <div class="backBtn-div-right">
+        <button class="backBtn" onclick="window.history.back()"><span class="backBtnSpan"> Back</span></button>
+    </div>
+
+    <div class="rect-box">
+        <p class="heading-topic">Please proceed with your choice of Gateway... <span class="blink-hand"><i class="fa fa-hand-o-down"></i></span></p>
+        
+        <div class="gateway-PayU">
+
+            <p style="color: gray;">Using PayU Gateway</p>
+            
+            <div>
+                <a style=" width: 150px; background-color: #363393; text-align: center; font-weight: 800; padding: 11px 0px; color: white; font-size: 12px; display: inline-block; text-decoration: none; letter-spacing: 1.5px; border-radius: 12px;" href='https://pmny.in/UI0e8vTHFLWw'>
+                    Donate Now
+                </a>
+            </div>
+        </div>
+
+        <p style="font-size: 18px; color: #333; font-weight: 800;">Or</p>
+
+        <div class="gateway-RazorPay">
+            
+            <p style="color: gray;">Using RazorPay Gateway</p>
+
+            <form>
+                <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GvYYsCk5OWFoKu" async></script>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="page-footer">
+    <p class="footer-content">Designed & Developed with <i class="fa fa-clock-o" style="color: red;"></i> by <a href="devloper.html" style="color: white;">Bhavjot Singh</a></p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meet the Team | DEVELOPERS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="https://cdn.dribbble.com/users/601549/screenshots/4994670/800px.png?compress=1&resize=400x300" type = "image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheets\styleTeam.css">
+<style>
+body {
+background-image: url('https://virtual-bg.com/wp-content/uploads/2020/06/star-wars-11-background-for-zoom-and-teams.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: 100% 100%;	
+}
+
+.container {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+overflow: hidden;
+}
+
+.main {
+position: relative;
+width: 270px;
+height: 350px;
+background: url("https://i.ibb.co/ZXJkS6p/bhavi.jpg") center;
+background-size: cover;
+border-radius: 5px;
+}
+
+.content {
+position: absolute;
+width: 100%;
+height: 150px;
+bottom: 0;
+color: white;
+text-align: center;
+box-sizing: border-box;
+transform:translateY(150px);
+background: #333;
+transition: 0.5s;
+border-radius: 0 0 5px 5px;
+}
+
+
+h4 {
+transform: translateX(-220px);
+transition: 0.5s;
+transition-delay: 0.1s;
+font-size: 19px;
+font-family: 'alata', sans-serif;
+}
+
+.h4a {
+transform: translateX(-220px);
+transition: 0.5s;
+transition-delay: 0.1s;
+font-size: 19px;
+font-family: 'alata', sans-serif;
+}
+
+.h4b {
+transform: translateX(-220px);
+transition: 0.5s;
+transition-delay: 0.1s;
+font-size: 19px;
+font-family: 'alata', sans-serif;
+}
+
+
+.container:hover .main{
+filter:blur(1px);
+}
+
+.container:hover h4{
+transform: translateX(0px);
+}
+
+.container:hover .content{
+transform:translateY(0);
+}
+
+.fa {
+padding: 5px 15px;
+font-size: 24px;
+transform: transalteX(-200px);
+color: white;
+}
+
+.container:hover .fa{
+transform: transalteX(0);
+cursor: pointer;
+}
+
+.fa-facebook {
+tansition: 0.5s; 
+}
+
+.fa-facebook:hover {
+color: blue;
+transform: scale(1.5);
+}
+
+.fa-linkedin {
+tansition: 0.5s; 
+}
+
+.fa-linkedin:hover {
+color: #3f729b;
+transform: scale(1.5);
+}
+
+.fa-github {
+tansition: 0.5s; 
+}
+
+.fa-github:hover {
+color: #3cba54;
+transform: scale(1.5);
+}
+
+.fa-google {
+tansition: 0.5s; 
+}
+
+.fa-google:hover {
+color: #f4c20d;
+transform: scale(1.5);
+}
+
+.bg-text {
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.4);
+color: White;
+font-weight: bold;
+font-size: 20px;
+border: 10px solid white;
+border-radius: 10px;
+position: relative;
+left: 370px;
+z-index: 2;
+width: 500px;
+padding: 10px;
+text-align: center;
+font-family: 'alata', sans-serif;
+}
+
+
+button {
+font-size: 22px;
+background-color: #333;
+color: white;
+border: none;
+border-radius: 10px;
+text-align: center;
+padding: 10px;
+width: 12%;
+height: 50px;
+cursor: pointer;
+margin: 5px;
+opacity: 0.7;
+position: relative;
+top: 450px;
+left: 550px;
+}
+
+button:hover {
+opacity: 5;
+font-weight: bolder;
+transform: scale(1.1);
+}
+
+button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+button span:after {
+content: '\00ab';
+position: absolute;
+opacity: 0;
+top: 0;
+left: -20px;
+transition: 0.5s;
+}
+
+button:hover span {
+padding-left: 25px;
+}
+
+button:hover span:after {
+opacity: 1;
+left: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-text"><h1>MEET THE DEVELOPER</h1></div>
+
+<div class="container">
+<div class="main">
+
+</div>
+
+<div class="content">
+
+<h4>BHAVJOT SINGH</h4>
+
+<div class="links">
+<a href="https://www.linkedin.com/in/bhavjot-singh?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUlIIFYFuSo%2Bv5HhnTniBHQ%3D%3D" target="_blank"><i class="fa fa-linkedin"></i></a>
+<a href="https://github.com/bhavi140201" target="_blank"><i class="fa fa-github"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100005513145120" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="mailto:bhavjotbhavi14@gmail.com?Subject=Contact%20" target="_blank"><i class="fa fa-google"></i></a>
+</div>
+</div>
+</div>
+
+<button onclick="document.location='index.html'"><span> Home</span></button>
+
+</body>
+</html>
